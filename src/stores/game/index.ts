@@ -1,4 +1,4 @@
-import { reducer as board } from "./board";
+import { reducer as board } from "./reducer";
 import { combineReducers } from "redux";
 
 export const reducer = combineReducers({

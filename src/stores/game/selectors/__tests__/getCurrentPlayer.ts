@@ -1,5 +1,5 @@
 import { getCurrentPlayer } from "../getCurrentPlayer";
-import { BoardState } from "../../board";
+import { BoardState } from "../../reducer";
 
 describe("getCurrentPlayer selector", () => {
   it("is yellow on empty board", () => {

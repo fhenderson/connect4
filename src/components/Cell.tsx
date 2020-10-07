@@ -2,7 +2,7 @@ import { Color } from "../types";
 
 import React from "react";
 import cn from "classnames";
-import { WinningCoordinates } from "../reducers/game/selectors/testCombination";
+import { WinningCoordinates } from "../stores/game/utils/testCombination";
 
 interface Props {
   color: Color;

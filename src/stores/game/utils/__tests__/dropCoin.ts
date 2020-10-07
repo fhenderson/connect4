@@ -1,5 +1,5 @@
 import { dropCoin } from "../dropCoin";
-import { BoardState } from "../board";
+import { BoardState } from "../../reducer";
 
 describe("dropCoin function", () => {
   it("returns an unchanged state if column is full", () => {

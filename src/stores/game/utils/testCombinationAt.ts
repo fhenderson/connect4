@@ -1,5 +1,5 @@
 import { Combination } from "../../../config";
-import { BoardState } from "../board";
+import { BoardState } from "../reducer";
 import { Color } from "../../../types";
 
 /**

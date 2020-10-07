@@ -3,7 +3,7 @@ import cn from "classnames";
 
 import { Cell } from "./Cell";
 import { Color } from "../types";
-import { WinningCoordinates } from "../reducers/game/selectors/testCombination";
+import { WinningCoordinates } from "../stores/game/utils/testCombination";
 
 interface Props {
   colors: Color[];
