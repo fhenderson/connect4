@@ -1,5 +1,5 @@
 import { LocalState } from "..";
-import { Color } from "../../../types";
+import Color from "../../../types/color";
 
 /**
  * Return the current player (as a color) given a board game.

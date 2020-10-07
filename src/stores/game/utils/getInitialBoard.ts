@@ -1,5 +1,5 @@
-import { boardHeight, boardWidth } from "../../../config";
 import { BoardState } from "../reducer";
+import { boardHeight, boardWidth } from "../../../config";
 
 /**
  * return an empty board according to the sizes

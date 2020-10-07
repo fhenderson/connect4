@@ -1,7 +1,7 @@
 import { BoardState } from "../reducer";
 import { Combination } from "../../../config";
 import { testCombinationAt } from "./testCombinationAt";
-import { Color } from "../../../types";
+import Color from "../../../types/color";
 
 export interface WinningCoordinates {
   row: number;

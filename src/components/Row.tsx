@@ -2,7 +2,7 @@ import React from "react";
 import cn from "classnames";
 
 import { Cell } from "./Cell";
-import { Color } from "../types";
+import Color from "../types/color";
 import { WinningCoordinates } from "../stores/game/utils/testCombination";
 
 interface Props {

@@ -1,7 +1,7 @@
-import { Color } from "../../types";
-import { Action } from "../../actions/types";
+import Color from "../../types/color";
 import { dropCoin } from "./utils/dropCoin";
 import { getInitialBoard } from "./utils/getInitialBoard";
+import { Action } from "./actions/types";
 
 export type BoardState = Color[][];
 

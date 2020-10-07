@@ -1,12 +1,12 @@
 import React from "react";
 import cn from "classnames";
 import { connect } from "react-redux";
-import { RootState } from "../reducers";
-import { getBoard, getCurrentPlayer, getWinner } from "../reducers/selectors";
-import { Row } from "./Row";
-import { dropCoin } from "../actions/dropCoin";
-import { resetBoard } from "../actions/resetBoard";
-import { Color } from "../types";
+import { RootState } from "../stores";
+import { getBoard, getCurrentPlayer, getWinner } from "../stores/selectors";
+import { Row } from "../components/Row";
+import { dropCoin } from "../stores/game/actions/dropCoin";
+import { resetBoard } from "../stores/game/actions/resetBoard";
+import Color from "../types/color";
 
 interface Props {
   board: ReturnType<typeof getBoard>;

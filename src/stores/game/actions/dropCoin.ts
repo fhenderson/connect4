@@ -1,4 +1,4 @@
-import { Color } from "../types";
+import Color from "../../../types/color";
 
 export interface DropCoinAction {
   type: "DROP_COIN";

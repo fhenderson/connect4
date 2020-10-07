@@ -1,5 +1,5 @@
-import { BoardState } from "./reducer";
-import { Color } from "../../types";
+import { BoardState } from "../reducer";
+import Color from "../../../types/color";
 
 export function dropCoin(
   state: BoardState,

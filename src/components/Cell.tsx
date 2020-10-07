@@ -1,4 +1,4 @@
-import { Color } from "../types";
+import Color from "../types/color";
 
 import React from "react";
 import cn from "classnames";
