@@ -1,3 +1,15 @@
+# The base project (master branch) was gaven to me as technical exercise 
+
+I had to add new functionalities: 
+* New reset button (AddingResetButton branch)
+  * I had a bug regarding a non iterating state, the fix can be found on the following [pull request](https://github.com/fhenderson/connect4/pull/1/files)
+  * I updated the button position and color scheme update can be find at the following [pull request](https://github.com/fhenderson/connect4/pull/4/files) 
+* I end up giving some suggestions regarding the file and folder infrastructure and quickly re-organized the project to show the direction I was proposing (branch [some-files-reorganisation-for-clarity](https://github.com/fhenderson/connect4/tree/some-files-reorganisation-for-clarity))
+
+------------------------------------------
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Connect Four
