@@ -1,9 +1,9 @@
 import { Combination } from "../../../config";
-import { BoardState } from "../board";
-import { Color } from "../../../types";
+import { BoardState } from "../reducer";
+import Color from "../../../types/color";
 
 /**
- * Test is a given combination is successfull
+ * Test is a given combination is successful
  * at a given a column and row coordinate
  *
  * @param state the game board

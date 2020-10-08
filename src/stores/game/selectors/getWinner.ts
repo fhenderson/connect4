@@ -1,6 +1,6 @@
 import { LocalState } from "..";
 import { winningCombinations } from "../../../config";
-import { testCombination } from "./testCombination";
+import { testCombination } from "../utils/testCombination";
 
 /**
  * Test every possible winning combinations against the

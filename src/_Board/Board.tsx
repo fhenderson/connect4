@@ -1,17 +1,19 @@
 import React from "react";
 import cn from "classnames";
 import { connect } from "react-redux";
-import { RootState } from "../reducers";
-import { getBoard, getCurrentPlayer, getWinner } from "../reducers/selectors";
-import { Row } from "./Row";
-import { dropCoin } from "../actions/dropCoin";
-import { Color } from "../types";
+import { RootState } from "../stores";
+import { getBoard, getCurrentPlayer, getWinner } from "../stores/selectors";
+import { Row } from "../components/Row";
+import { dropCoin } from "../stores/game/actions/dropCoin";
+import { resetBoard } from "../stores/game/actions/resetBoard";
+import Color from "../types/color";
 
 interface Props {
   board: ReturnType<typeof getBoard>;
   color: ReturnType<typeof getCurrentPlayer>;
   winner: ReturnType<typeof getWinner>;
   dropCoin: typeof dropCoin;
+  resetBoard: typeof resetBoard;
 }
 
 export class BoardComponent extends React.Component<Props> {
@@ -43,6 +45,21 @@ export class BoardComponent extends React.Component<Props> {
     );
   };
 
+  resetBoard = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    this.props.resetBoard();
+  };
+
+  getResetButtonStyle() {
+    return {
+      margin: "10px",
+      padding: "4px",
+      borderRadius: "3px",
+      color: "white",
+      backgroundColor: this.props.winner ? "green" : "red"
+    };
+  }
+
   render() {
     const classes = cn("Game-Board");
 
@@ -53,6 +70,10 @@ export class BoardComponent extends React.Component<Props> {
         <div className="Game">
           <div className={classes}>{this.props.board.map(this.displayRow)}</div>
         </div>
+
+        <button onClick={this.resetBoard} style={this.getResetButtonStyle()}>
+          Reset
+        </button>
       </>
     );
   }
@@ -64,4 +85,6 @@ const mapState = (state: RootState) => ({
   winner: getWinner(state)
 });
 
-export const Board = connect(mapState, { dropCoin })(BoardComponent);
+export const Board = connect(mapState, { dropCoin, resetBoard })(
+  BoardComponent
+);

@@ -1,4 +1,4 @@
-import { BoardState } from "../../board";
+import { BoardState } from "../../reducer";
 import { testCombination } from "../testCombination";
 
 describe("testCombination selector", () => {
